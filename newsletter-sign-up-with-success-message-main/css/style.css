@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+}
+body {
+  background-color: hsl(234, 29%, 20%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.newsLetterWrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  height: 90vh;
+  border-radius: 10px;
+}
+.leftContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 40px 40px;
+}
+.leftContainer > h1 {
+  font-size: 65px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.leftContainer > p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.leftContainer > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.leftContainer > ul > li {
+  margin-bottom: 10px;
+}
+.leftContainer > ul > li > span {
+  font-size: 16px;
+  margin: 10px;
+}
+.leftContainer > ul > li > img {
+  width: 20px;
+  height: 20px;
+}
+
+.leftContainer > form {
+  display: flex;
+  flex-direction: column;
+}
+.leftContainer > form > input {
+  font-size: 16px;
+  padding: 15px 10px;
+  margin-bottom: 30px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+.leftContainer > form > input:focus {
+  outline: none;
+}
+.button {
+  padding: 20px;
+  border: none;
+  background: linear-gradient(135deg, hsl(234, 29%, 20%), hsl(235, 18%, 26%));
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.button:hover {
+  background: hsl(4, 100%, 67%);
+}
+.rightContainer {
+  flex: 1;
+}
+.rightContainer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 20px;
+  border-radius: 8%;
+}
+.emailError {
+  color: red;
+  text-align: right;
+}
+.success {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  height: 80vh;
+  width: 40%;
+
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 40px 40px;
+  border-radius: 8%;
+}
+.success > h1 {
+  font-size: 65px;
+  margin-bottom: 20px;
+}
+.success > p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.success > button {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  /* Adjust styles for screens up to 768px wide (typical tablet size) */
+
+  .newsLetterWrapper {
+    flex-direction: column-reverse;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .leftContainer {
+    padding: 20px;
+  }
+
+  .rightContainer {
+    width: 100%;
+    height: 50%;
+  }
+
+  .success {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+}
