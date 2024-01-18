@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: newsletter-sign-up-with-success-message-main
+- Solution URL: [newsletter-sign-up-with-success-message-main](https://github.com/venkathir/Frontend-Mentor-Solutions/blob/main/newsletter-sign-up-with-success-message-main/README.md)
 - Live Site URL:
 
 ## My process
