@@ -18,9 +18,15 @@ Users should be able to:
 
 ### Screenshot
 
+<<<<<<< HEAD
+=======
+![image](https://github.com/venkathir/Frontend-Mentor-Solutions/assets/147972319/a9701736-d186-464d-949b-16e871c7fbca)
+
+
+>>>>>>> dde5ee54baa7ac1338e15a40f375b4899ec2e8f6
 ### Links
 
-- Solution URL:
+- Solution URL: [newsletter-sign-up-with-success-message-main](https://github.com/venkathir/Frontend-Mentor-Solutions/blob/main/newsletter-sign-up-with-success-message-main/README.md)
 - Live Site URL:
 
 ## My process
