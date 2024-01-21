@@ -1,0 +1,235 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Color Variables */
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+/* Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body Styles */
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--light-grey);
+}
+
+/* Calculator Wrapper Styles */
+.claculatorWrapper {
+  width: 50%;
+  height: 80vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border-bottom-right-radius: 150px;
+  background: var(--white);
+}
+
+/* Calculator Container Styles */
+.calcualtorContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Input Container Styles */
+.inputContainer {
+  flex: 1;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Input Column Styles */
+.inpuColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Input Styles */
+.inpuColumn > input {
+  font-size: 32px;
+  width: 60%;
+  padding: 0 10px;
+  border: 1px solid var(--light-grey);
+}
+
+/* Input Focus Styles */
+.inpuColumn > input:focus {
+  outline: 1px solid var(--purple);
+}
+
+/* Submit Container Styles */
+.submitContaier {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+/* Submit Line Styles */
+.sumbitLine {
+  border: 1px solid var(--light-grey);
+  width: 80%;
+}
+
+/* Submit Button Styles */
+.submitButton {
+  background: var(--purple);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Submit Button Image Styles */
+.submitButton img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Submit Button Hover Styles */
+.submitButton:hover {
+  background: var(--off-black);
+}
+
+/* Result Container Styles */
+.resultContainer {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+/* Result Paragraph Styles */
+.resultContainer > div > p {
+  font-size: 70px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Result Span Styles */
+.resultContainer > div > p > span {
+  color: var(--purple);
+  margin-right: 20px;
+  font-weight: 800;
+}
+
+/* Error Styles */
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+/* Invalid Input Styles */
+.claculatorWrapper
+  .calcualtorContainer
+  .inputContainer
+  .inpuColumn
+  input.invalid-input {
+  border: 1px solid red;
+}
+
+/* Invalid Input Focus Styles */
+.claculatorWrapper
+  .calcualtorContainer
+  .inputContainer
+  .inpuColumn
+  input:focus {
+  outline: 1px solid var(--purple);
+}
+
+/* Invalid Label Styles */
+.claculatorWrapper
+  .calcualtorContainer
+  .inputContainer
+  .inpuColumn
+  .invalid-label {
+  color: red;
+}
+@media (max-width: 768px) {
+  .claculatorWrapper {
+    width: 90%;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    height: 50vh;
+    border-bottom-right-radius: 100px;
+  }
+
+  #ageCalculatorForm {
+    height: 100%; /* Apply styles to the form within the media query */
+  }
+
+  .calcualtorContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .submitContaier {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sumbitLine {
+    width: 100%;
+  }
+
+  .inputContainer {
+    flex-direction: row;
+    align-items: center;
+    gap: 0px 20px;
+    margin-bottom: 20px;
+  }
+
+  .inpuColumn > input {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .submitButton {
+    width: 40px;
+    height: 40px;
+    margin-top: -40px;
+  }
+
+  .resultContainer > div > p {
+    font-size: 40px;
+  }
+  .error {
+    font-size: 9px;
+  }
+}

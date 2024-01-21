@@ -18,8 +18,6 @@ Users should be able to:
 
 ### Screenshot
 
-![D:\New folder\New folder\project\workspace\Frontend mentor Challenges\newsletter-sign-up-with-success-message-main\assets\images\screenshot.PNG]
-
 ### Links
 
 - Solution URL:

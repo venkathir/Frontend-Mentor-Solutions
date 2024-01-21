@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="claculatorWrapper">
+      <form id="ageCalculatorForm" onsubmit="calculateAge(event)">
+        <div class="calcualtorContainer">
+          <div class="inputContainer">
+            <div class="inpuColumn">
+              <label for="day" id="dayLabel">Date</label>
+              <input type="number" id="day" placeholder="DD" />
+              <span class="error" id="dayError"></span>
+            </div>
+            <div class="inpuColumn">
+              <label for="month" id="monthLabel">Month</label>
+              <input type="number" id="month" placeholder="MM" />
+              <span class="error" id="monthError"></span>
+            </div>
+            <div class="inpuColumn">
+              <label for="year" id="yearLabel">Year</label>
+              <input type="number" id="year" placeholder="YYYY" />
+              <span class="error" id="yearError"></span>
+            </div>
+          </div>
+          <div class="submitContaier">
+            <div class="sumbitLine"></div>
+            <div class="submitButton" onclick="calculateAge(event)">
+              <img
+                src="./assets/images/icon-arrow.svg"
+                type="submit"
+                alt="submit"
+              />
+            </div>
+          </div>
+          <div class="resultContainer">
+            <div class="resultYear">
+              <p><span id="resultyear">--</span>Years</p>
+            </div>
+            <div class="resultDate">
+              <p><span id="resultmonth">--</span>Months</p>
+            </div>
+            <div class="resultDay">
+              <p><span id="resultday">--</span>Days</p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+    <script src="./main.js"></script>
+  </body>
+</html>
